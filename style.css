@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    font-family:Inter,Arial,sans-serif;
+    background:#fff;
+    color:#111;
+    cursor:none;
+}
+header{
+    padding:30px 40px;
+    font-size:26px;
+    border-bottom:1px solid #eee;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:30px;
+    padding:40px;
+}
+.card{
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+.card:hover{
+    transform:translateY(-6px);
+}
+.card img,.card video{
+    width:100%;
+    display:block;
+    transition:.6s ease;
+}
+.card:hover img{
+    transform:scale(1.15);
+}
+.cursor{
+    width:18px;
+    height:18px;
+    border:2px solid #000;
+    border-radius:50%;
+    position:fixed;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    z-index:9999;
+}
